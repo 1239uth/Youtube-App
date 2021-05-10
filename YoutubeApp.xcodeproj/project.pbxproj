@@ -17,6 +17,9 @@
 		00F7AB1226491E270063CA3D /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB1126491E270063CA3D /* VideoModel.swift */; };
 		00F7AB142649283B0063CA3D /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB132649283B0063CA3D /* VideoPreview.swift */; };
 		00F7AB16264929E80063CA3D /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB15264929E80063CA3D /* CacheManager.swift */; };
+		00F7AB1926492D210063CA3D /* YoutubeVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB1826492D210063CA3D /* YoutubeVideoPlayer.swift */; };
+		00F7AB1B26492F7F0063CA3D /* VideoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB1A26492F7F0063CA3D /* VideoDetail.swift */; };
+		00F7AB1D264930F30063CA3D /* VideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB1C264930F30063CA3D /* VideoRow.swift */; };
 		37A6B1FFA749819FCBEEA274 /* Pods_YoutubeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2AA248A21483E983770850 /* Pods_YoutubeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		00F7AB1126491E270063CA3D /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		00F7AB132649283B0063CA3D /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
 		00F7AB15264929E80063CA3D /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		00F7AB1826492D210063CA3D /* YoutubeVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoPlayer.swift; sourceTree = "<group>"; };
+		00F7AB1A26492F7F0063CA3D /* VideoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetail.swift; sourceTree = "<group>"; };
+		00F7AB1C264930F30063CA3D /* VideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRow.swift; sourceTree = "<group>"; };
 		05C647CA3462A8F1FFF23BB3 /* Pods-YoutubeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.release.xcconfig"; path = "Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.release.xcconfig"; sourceTree = "<group>"; };
 		3C2AA248A21483E983770850 /* Pods_YoutubeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935C1A9BFD332E3053FBCE2B /* Pods-YoutubeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,11 +77,11 @@
 		00F7AAF826490F050063CA3D /* YoutubeApp */ = {
 			isa = PBXGroup;
 			children = (
+				00F7AAF926490F050063CA3D /* YoutubeApp.swift */,
+				00F7AB1726492CFB0063CA3D /* Views */,
 				00F7AB1026491E1E0063CA3D /* ViewModels */,
 				00F7AB0B264917EA0063CA3D /* Models */,
 				00F7AB08264912950063CA3D /* Helpers */,
-				00F7AAF926490F050063CA3D /* YoutubeApp.swift */,
-				00F7AAFB26490F050063CA3D /* ContentView.swift */,
 				00F7AAFD26490F070063CA3D /* Assets.xcassets */,
 				00F7AB0226490F070063CA3D /* Info.plist */,
 				00F7AAFF26490F070063CA3D /* Preview Content */,
@@ -116,6 +122,17 @@
 				00F7AB132649283B0063CA3D /* VideoPreview.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		00F7AB1726492CFB0063CA3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00F7AAFB26490F050063CA3D /* ContentView.swift */,
+				00F7AB1826492D210063CA3D /* YoutubeVideoPlayer.swift */,
+				00F7AB1A26492F7F0063CA3D /* VideoDetail.swift */,
+				00F7AB1C264930F30063CA3D /* VideoRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		185A027C5215CB0FB858110F /* Pods */ = {
@@ -252,7 +269,10 @@
 				00F7AB1226491E270063CA3D /* VideoModel.swift in Sources */,
 				00F7AAFC26490F050063CA3D /* ContentView.swift in Sources */,
 				00F7AAFA26490F050063CA3D /* YoutubeApp.swift in Sources */,
+				00F7AB1D264930F30063CA3D /* VideoRow.swift in Sources */,
 				00F7AB16264929E80063CA3D /* CacheManager.swift in Sources */,
+				00F7AB1926492D210063CA3D /* YoutubeVideoPlayer.swift in Sources */,
+				00F7AB1B26492F7F0063CA3D /* VideoDetail.swift in Sources */,
 				00F7AB0A264912AA0063CA3D /* Constants.swift in Sources */,
 				00F7AB142649283B0063CA3D /* VideoPreview.swift in Sources */,
 				00F7AB0F264918280063CA3D /* Video.swift in Sources */,
