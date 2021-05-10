@@ -39,6 +39,7 @@ struct VideoDetail: View {
         .font(.system(size: 19))
         .padding()
         .padding(.top, 40)
+        .background(backgroundColour.edgesIgnoringSafeArea(.all))
     }
 }
 

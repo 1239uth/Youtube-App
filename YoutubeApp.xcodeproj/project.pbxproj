@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00F7AAFA26490F050063CA3D /* YoutubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AAF926490F050063CA3D /* YoutubeApp.swift */; };
-		00F7AAFC26490F050063CA3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AAFB26490F050063CA3D /* ContentView.swift */; };
 		00F7AAFE26490F070063CA3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F7AAFD26490F070063CA3D /* Assets.xcassets */; };
 		00F7AB0126490F070063CA3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F7AB0026490F070063CA3D /* Preview Assets.xcassets */; };
 		00F7AB0A264912AA0063CA3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB09264912AA0063CA3D /* Constants.swift */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		00F7AAF626490F050063CA3D /* YoutubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F7AAF926490F050063CA3D /* YoutubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeApp.swift; sourceTree = "<group>"; };
-		00F7AAFB26490F050063CA3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		00F7AAFD26490F070063CA3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00F7AB0026490F070063CA3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		00F7AB0226490F070063CA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 		00F7AB1726492CFB0063CA3D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				00F7AAFB26490F050063CA3D /* ContentView.swift */,
 				00F7AB1826492D210063CA3D /* YoutubeVideoPlayer.swift */,
 				00F7AB1A26492F7F0063CA3D /* VideoDetail.swift */,
 				00F7AB1C264930F30063CA3D /* VideoRow.swift */,
@@ -270,7 +267,6 @@
 			files = (
 				00F7AB0D264917FD0063CA3D /* Response.swift in Sources */,
 				00F7AB1226491E270063CA3D /* VideoModel.swift in Sources */,
-				00F7AAFC26490F050063CA3D /* ContentView.swift in Sources */,
 				00F7AAFA26490F050063CA3D /* YoutubeApp.swift in Sources */,
 				00F7AB1D264930F30063CA3D /* VideoRow.swift in Sources */,
 				00F7AB16264929E80063CA3D /* CacheManager.swift in Sources */,

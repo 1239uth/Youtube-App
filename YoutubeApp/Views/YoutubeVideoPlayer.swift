@@ -15,6 +15,9 @@ struct YoutubeVideoPlayer: UIViewRepresentable {
         // Create web view
         let view = WKWebView()
         
+        // Set background colour for the view
+        view.backgroundColor = UIColor(backgroundColour)
+        
         // Create url for the video
         let embedUrlString = Constants.YT_EMBED_URL + video.videoId
         
