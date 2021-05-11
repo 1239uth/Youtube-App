@@ -42,6 +42,7 @@ struct Home: View {
                     GIDSignIn.sharedInstance().signOut()
                     signInManager.signedIn = false
                 }
+                .foregroundColor(.blue)
                 .padding()
                 .transition(.move(edge: .bottom))
             }
