@@ -31,7 +31,7 @@ struct LikeAndSubscribe: View {
             }
             Spacer()
             Button(subscribedText) {
-                ratingModel.isSubscribed.toggle()
+                ratingModel.toggleSubscribe()
             }
             Spacer()
         }
