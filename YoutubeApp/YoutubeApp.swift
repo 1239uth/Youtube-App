@@ -16,6 +16,8 @@ struct YoutubeApp: App {
     init() {
         GIDSignIn.sharedInstance().clientID = Constants.GID_SIGN_IN_ID
         GIDSignIn.sharedInstance().delegate = signInManager
+        
+        GIDSignIn.sharedInstance().scopes.append(Constants.YT_AUTH_SCOPE)
     }
     
     var body: some Scene {
