@@ -94,9 +94,9 @@ extension RatingModel {
     /// Changes the users subscription status for the channel
     func toggleSubscribe() {
         if isSubscribed {
-            unsubscribe()
+            self.unsubscribe()
         } else {
-            subscribe()
+            self.subscribe()
         }
     }
     
