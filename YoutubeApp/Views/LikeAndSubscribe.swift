@@ -16,7 +16,7 @@ struct LikeAndSubscribe: View {
     }
     
     var likeText: String {
-        return ratingModel.isLiked ? "Unlike" : "Like 👍"
+        return ratingModel.isLiked ? "Unlike" : "Like"
     }
     
     var subscribedText: String {
@@ -26,12 +26,24 @@ struct LikeAndSubscribe: View {
     var body: some View {
         HStack {
             Spacer()
-            Button(likeText) {
+            Button(action: {
                 ratingModel.toggleLike()
+            }) {
+                HStack {
+                    Text(likeText)
+                    Image(systemName: ratingModel.isLiked ? "hand.thumbsup.fill" : "hand.thumbsup")
+                }
+                .foregroundColor(ratingModel.isLiked ? .blue : .gray)
             }
             Spacer()
-            Button(subscribedText) {
+            Button(action: {
                 ratingModel.toggleSubscribe()
+            }) {
+                Text(subscribedText)
+                    .bold()
+                    .foregroundColor(ratingModel.isSubscribed ? .gray : .red)
+                    .padding()
+                    .cornerRadius(6)
             }
             Spacer()
         }
