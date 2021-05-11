@@ -20,6 +20,8 @@
 		00F7AB1B26492F7F0063CA3D /* VideoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB1A26492F7F0063CA3D /* VideoDetail.swift */; };
 		00F7AB1D264930F30063CA3D /* VideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB1C264930F30063CA3D /* VideoRow.swift */; };
 		00F7AB1F2649340C0063CA3D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB1E2649340C0063CA3D /* Home.swift */; };
+		00F7AB21264A1EB10063CA3D /* GIDSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB20264A1EB10063CA3D /* GIDSignInManager.swift */; };
+		00F7AB23264A206B0063CA3D /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AB22264A206B0063CA3D /* GoogleSignInButton.swift */; };
 		37A6B1FFA749819FCBEEA274 /* Pods_YoutubeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2AA248A21483E983770850 /* Pods_YoutubeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		00F7AB1A26492F7F0063CA3D /* VideoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetail.swift; sourceTree = "<group>"; };
 		00F7AB1C264930F30063CA3D /* VideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRow.swift; sourceTree = "<group>"; };
 		00F7AB1E2649340C0063CA3D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		00F7AB20264A1EB10063CA3D /* GIDSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIDSignInManager.swift; sourceTree = "<group>"; };
+		00F7AB22264A206B0063CA3D /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		05C647CA3462A8F1FFF23BB3 /* Pods-YoutubeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.release.xcconfig"; path = "Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.release.xcconfig"; sourceTree = "<group>"; };
 		3C2AA248A21483E983770850 /* Pods_YoutubeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935C1A9BFD332E3053FBCE2B /* Pods-YoutubeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			children = (
 				00F7AB1126491E270063CA3D /* VideoModel.swift */,
 				00F7AB132649283B0063CA3D /* VideoPreview.swift */,
+				00F7AB20264A1EB10063CA3D /* GIDSignInManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				00F7AB1A26492F7F0063CA3D /* VideoDetail.swift */,
 				00F7AB1C264930F30063CA3D /* VideoRow.swift */,
 				00F7AB1E2649340C0063CA3D /* Home.swift */,
+				00F7AB22264A206B0063CA3D /* GoogleSignInButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 				00F7AAF326490F050063CA3D /* Frameworks */,
 				00F7AAF426490F050063CA3D /* Resources */,
 				BA1A98303A0835DFA124A8B2 /* [CP] Embed Pods Frameworks */,
+				46A1405BAA2AF844E1A3E5F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +226,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		46A1405BAA2AF844E1A3E5F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7BA9DA990DB8361698A3FA0E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,11 +293,13 @@
 				00F7AB1226491E270063CA3D /* VideoModel.swift in Sources */,
 				00F7AAFA26490F050063CA3D /* YoutubeApp.swift in Sources */,
 				00F7AB1D264930F30063CA3D /* VideoRow.swift in Sources */,
+				00F7AB21264A1EB10063CA3D /* GIDSignInManager.swift in Sources */,
 				00F7AB16264929E80063CA3D /* CacheManager.swift in Sources */,
 				00F7AB1926492D210063CA3D /* YoutubeVideoPlayer.swift in Sources */,
 				00F7AB1B26492F7F0063CA3D /* VideoDetail.swift in Sources */,
 				00F7AB0A264912AA0063CA3D /* Constants.swift in Sources */,
 				00F7AB142649283B0063CA3D /* VideoPreview.swift in Sources */,
+				00F7AB23264A206B0063CA3D /* GoogleSignInButton.swift in Sources */,
 				00F7AB1F2649340C0063CA3D /* Home.swift in Sources */,
 				00F7AB0F264918280063CA3D /* Video.swift in Sources */,
 			);
