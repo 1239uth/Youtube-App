@@ -25,6 +25,21 @@ struct Home: View {
                     .onOpenURL(perform: { url in
                         GIDSignIn.sharedInstance().handle(url)
                     })
+            } else {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        GIDSignIn.sharedInstance().signOut()
+                        signInManager.signedIn = false
+                    }) {
+                        Text("Sign Out")
+                            .bold()
+                            .foregroundColor(.blue)
+                    }
+                    .padding(.trailing, 30)
+                    .transition(.move(edge: .top))
+                }
+                
             }
             
             ScrollView {
@@ -35,16 +50,6 @@ struct Home: View {
                     }
                 }
                 .padding(.top, 20)
-            }
-            
-            if signInManager.signedIn {
-                Button("Sign Out") {
-                    GIDSignIn.sharedInstance().signOut()
-                    signInManager.signedIn = false
-                }
-                .foregroundColor(.blue)
-                .padding()
-                .transition(.move(edge: .bottom))
             }
         }
         .foregroundColor(.white)
